@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './index.css';
 // import LogoS from '../../assets/images/logo-s.png'
 import LogoS from '../../assets/images/RedWind.JPG'
@@ -11,6 +11,11 @@ const Sidebar = () => (
         <img src={LogoS} alt="logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
     </Link>
+    <nav>
+        <NavLink>
+            
+        </NavLink>
+    </nav>
 </div>
     )
 
