@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
-import LogoS from '../../assets/images/logo-s.png'
+// import LogoS from '../../assets/images/logo-s.png'
+import LogoS from '../../assets/images/RedWind.JPG'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 
 const Sidebar = () => (
