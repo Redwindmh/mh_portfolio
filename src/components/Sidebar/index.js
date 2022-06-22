@@ -27,22 +27,22 @@ const Sidebar = () => (
     </nav>
     <ul>
         <li>
-            <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/malcolm-hendricks-50152a139/'>
+            <a target="_blank" rel='noopener noreferrer' href='https://www.linkedin.com/in/malcolm-hendricks-50152a139/'>
                 <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
             </a>
         </li>
         <li>
-            <a target="_blank" rel='noreferrer' href='https://github.com/Redwindmh'>
+            <a target="_blank" rel='noopener noreferrer' href='https://github.com/Redwindmh'>
                 <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
             </a>
         </li>
         <li>
-            <a target="_blank" rel='noreferrer' href='https://twitter.com/Shiranui_369'>
+            <a target="_blank" rel='noopener noreferrer' href='https://twitter.com/Shiranui_369'>
                 <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
             </a>
         </li>
         <li>
-            <a target="_blank" rel='noreferrer' href="skype:live:redwindmh">
+            <a target="_blank" rel='noopener noreferrer' href="skype:live:redwindmh">
                 <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
             </a>
         </li>
