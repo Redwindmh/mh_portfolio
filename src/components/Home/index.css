@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.home-page .text-zone {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 40%;
+  max-height: 90%;
+}
+.home-page h1 {
+  color: #fff;
+  font-size: 53px;
+  margin: 0;
+  font-family: "Coolvetica";
+  font-weight: 400;
+}
+.home-page::before {
+  content: "<h1>";
+  font-family: "La Belle Aurore";
+  color: #ffd700;
+  font-size: 18px;
+  position: absolute;
+}/*# sourceMappingURL=index.css.map */
