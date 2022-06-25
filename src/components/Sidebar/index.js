@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './index.css';
 // import LogoS from '../../assets/images/logo-s.png'
-import LogoS from '../../assets/images/RedWind.JPG'
+import RWLogo from '../../assets/images/RedWind.JPG'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
@@ -11,7 +11,7 @@ import { faLinkedin, faTwitter, faGithub, faSkype } from '@fortawesome/free-bran
 const Sidebar = () => (
 <div className="nav-bar">
     <Link className="logo" to="/">
-        <img src={LogoS} alt="logo" />
+        <img src={RWLogo} alt="rwlogo" />
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
     </Link>
     <nav>
