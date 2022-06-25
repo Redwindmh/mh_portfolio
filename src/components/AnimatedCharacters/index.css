@@ -14,7 +14,6 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-
 .text-animate-hover:hover {
   -webkit-animation: rubberBand 1s;
           animation: rubberBand 1s;
@@ -194,5 +193,4 @@
 .text-animate._35 {
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
