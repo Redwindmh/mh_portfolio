@@ -50,8 +50,8 @@
   font-size: 11px;
   font-family: sans-serif;
   letter-spacing: 3px;
-  -webkit-animation: fadeIn 1s 1.8s backwards;
-          animation: fadeIn 1s 1.8s backwards;
+  -webkit-animation: fadeIn 1s 2.2s backwards;
+          animation: fadeIn 1s 2.2s backwards;
 }
 
 .home-page .flat-button {
@@ -65,8 +65,8 @@
   border: 1px solid #ffd700;
   margin-top: 25px;
   float: left;
-  -webkit-animation: fadeIn 1s 1.5s backwards;
-          animation: fadeIn 1s 1.5s backwards;
+  -webkit-animation: fadeIn 1s 2.2s backwards;
+          animation: fadeIn 1s 2.2s backwards;
   white-space: nowrap;
 }
 

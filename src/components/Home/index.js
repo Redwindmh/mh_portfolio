@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedCharacters from '../AnimatedCharacters';
 import './index.css';
 
 const Home = () => {
     const [characterClass, setCharacterClass] = useState('text-animate');
-    const nameArray = ['M','a','l','c','o','l','m']
-    const titleArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r','.']
+    const nameArray = ['M','a','l','c','o','l','m'];
+    const titleArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r','.'];
+
+    useEffect (() => {
+        setTimeout(() => {
+            setCharacterClass('text-animate-hover')
+        }, 4000)
+    }, []);
 
     return (
         <div className="container home-page">
