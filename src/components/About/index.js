@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
 import AnimatedCharacters from '../AnimatedCharacters'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faCss3, faGitAlt, faHtml5, faJsSquare, faPhp, faReact, faSass} from '@fortawesome/free-brands-svg-icons'
 
 const About = ()=> {
 
@@ -27,6 +29,31 @@ const About = ()=> {
             <p>
                 Puerto Ricans known for slashing
             </p>
+        </div>
+        <div className="stage-cube-content">
+            <div className="cube-spinner">
+                <div className="face1">
+                    <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                </div>
+                <div className="face2">
+                    <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                </div>
+                <div className="face3">
+                    <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                </div>
+                <div className="face4">
+                    <FontAwesomeIcon icon={faSass} color="#BF4080" />
+                </div>
+                <div className="face5">
+                    <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                </div>
+                <div className="face6">
+                    <FontAwesomeIcon icon={faPhp} color="#8892BF" />
+                </div>
+                <div className="face7">
+                    <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                </div>
+            </div>
         </div>
     </div>
  )
