@@ -74,4 +74,13 @@
   background: #ffd700;
   color: #333;
 }
+
+.home-page model-viewer {
+  position: absolute;
+  left: 10%;
+  top: -200px;
+  height: 900px;
+  width: 100vw;
+  z-index: -1;
+}
 /*# sourceMappingURL=index.css.map */
