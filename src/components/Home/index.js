@@ -6,7 +6,7 @@ import './index.css';
 
 const Home = () => {
     const [characterClass, setCharacterClass] = useState('text-animate');
-    const nameArray = ['M','a','l','c','o','l','m'];
+    const nameArray = ['M','a','l','c','o','l','m',','];
     const titleArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r','.'];
 
     useEffect (() => {
@@ -35,7 +35,7 @@ const Home = () => {
                     <model-viewer camera-controls autoplay ar src="https://d1a370nemizbjq.cloudfront.net/d72f0910-17b1-4242-a773-0272a76a96be.glb" alt="mh_avatar" auto-rotate></model-viewer>
                 </div>
             </div>
-            <Loader type="pacman" />
+            <Loader type="ball-spin-fade-loader" />
         </>
     );
 }

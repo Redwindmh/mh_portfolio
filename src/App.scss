@@ -1,6 +1,8 @@
 $primary-color: #ffd700;
 
 @import '../node_modules/loaders.css/src/animations/pacman.scss';
+@import '../node_modules/loaders.css/src/animations/ball-scale-multiple.scss';
+@import '../node_modules/loaders.css/src/animations/ball-spin-fade-loader.scss';
 
 @font-face {
   font-family: 'Helvetica Neue';
