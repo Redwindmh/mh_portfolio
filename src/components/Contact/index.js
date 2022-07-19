@@ -1,16 +1,40 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedCharacters from '../AnimatedCharacters'
 import './index.css'
+import emailjs from '@emailjs/browser'
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 
 const Contact = () => {
     const [characterClass, setCharacterClass] = useState('text-animate');
+    const refForm = useRef()
 
     useEffect (() => {
         setTimeout(() => {
             setCharacterClass('text-animate-hover')
         }, 3000)
     }, []);
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs
+            .sendForm(
+                'service_3e5q9sk',
+                'template_5oz5od8',
+                refForm.current,
+                'BxYR4LWs4_LqJ7wBv'
+            )
+            .then(
+                () => {
+                    alert('Message successfully sent! Thank you!')
+                    window.location.reload(false)
+                },
+                () => {
+                    alert('Unable to send message. Please try again.')
+                }
+            )
+    }
 
     return (
         <>
@@ -23,7 +47,7 @@ const Contact = () => {
                     Please get in touch with me!
                 </p>
                 <div className='contact-form'>
-                    <form>
+                    <form ref={refForm} onSubmit={sendEmail}>
                         <ul>
                             <li className='half'>
                                 <input type="text" name="name" placeholder="Your name" required />
@@ -38,11 +62,23 @@ const Contact = () => {
                                 <textarea name="message" placeholder="Your message" required />
                             </li>
                             <li>
-                                <input type="submit" className='flat-button'  />
+                                <input type="submit" className='flat-button' value="SEND"  />
                             </li>
                         </ul>
                     </form>
                 </div>
+            </div>
+            <div className='info-map'>
+                Malcolm Hendricks,<br />Japan
+                <span>malhendricks@gmail.com</span>
+            </div>
+            <div className='map-wrapper' id='map'>
+                <MapContainer center={[36.54181891676484, 138.41257884856518]} zoom={13}>
+                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                    <Marker position={[36.54181891676484, 138.41257884856518]} >
+                        <Popup>Deep in the mountains is where I lay, </Popup>
+                    </Marker>
+                </MapContainer>
             </div>
         </div>
         <Loader type="pacman" />
