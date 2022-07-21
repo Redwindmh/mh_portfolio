@@ -73,12 +73,12 @@ const Contact = () => {
                 <span>malhendricks@gmail.com</span>
             </div>
             <div className='map-wrapper' id='map'>
-                {/* <MapContainer center={[36.54181891676484, 138.41257884856518]} zoom={13}>
+                <MapContainer center={[36.54181891676484, 138.41257884856518]} zoom={13}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     <Marker position={[36.54181891676484, 138.41257884856518]} >
-                        <Popup>Deep in the mountains is where I lay, </Popup>
+                        <Popup className='popup-text'>“You're off the edge of the map, mate.<br />Here, there be monsters.”</Popup>
                     </Marker>
-                </MapContainer> */}
+                </MapContainer>
             </div>
         </div>
         <Loader type="pacman" />
