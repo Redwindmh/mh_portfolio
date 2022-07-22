@@ -10,16 +10,18 @@
   width: 40%;
   max-height: 90%;
 }
+
 .home-page h1 {
   color: #fff;
   font-size: 53px;
   margin: 0;
-  font-family: "Coolvetica";
+  font-family: 'Coolvetica';
   font-weight: 400;
 }
+
 .home-page h1::before {
-  content: "<h1>";
-  font-family: "La Belle Aurore";
+  content: '<h1>';
+  font-family: 'La Belle Aurore';
   color: #ffd700;
   font-size: 18px;
   position: absolute;
@@ -27,9 +29,10 @@
   left: 15px;
   opacity: 0.6;
 }
+
 .home-page h1::after {
-  content: "</h1>";
-  font-family: "La Belle Aurore";
+  content: '</h1>';
+  font-family: 'La Belle Aurore';
   color: #ffd700;
   font-size: 18px;
   position: absolute;
@@ -39,6 +42,7 @@
           animation: fadeIn 1s backwards;
   opacity: 0.6;
 }
+
 .home-page h2 {
   color: #8d8d8d;
   margin-top: 20px;
@@ -49,6 +53,7 @@
   -webkit-animation: fadeIn 1s 2.2s backwards;
           animation: fadeIn 1s 2.2s backwards;
 }
+
 .home-page .flat-button {
   color: #ffd700;
   font-size: 13px;
@@ -63,11 +68,17 @@
   -webkit-animation: fadeIn 1s 2.2s backwards;
           animation: fadeIn 1s 2.2s backwards;
   white-space: nowrap;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
+
 .home-page .flat-button:hover {
   background: #ffd700;
   color: #333;
+  -webkit-animation: swing 1s;
+          animation: swing 1s;
 }
+
 .home-page model-viewer {
   position: absolute;
   left: 10%;
@@ -75,4 +86,5 @@
   height: 900px;
   width: 100vw;
   z-index: -1;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,19 +1,21 @@
 // @keyframes bounceIn {
-    //     0% {
-    //         transform: translateY(-150px);
-    //         opacity: 0;
-    //     }
+//     0% {
+//         transform: translateY(-150px);
+//         opacity: 0;
+//     }
 
-    //     100% {
-    //         transform: translateY(0);
-    //         opacity: 1;
-    //     }
-    // }
+//     100% {
+//         transform: translateY(0);
+//         opacity: 1;
+//     }
+// }
 
 .text-animate {
     display: inline-block;
     opacity: 0;
     animation: bounceIn 1s 1s;
+    animation-duration: 1s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
     min-width: 10px;
 }

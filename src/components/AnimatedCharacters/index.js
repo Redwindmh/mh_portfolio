@@ -5,7 +5,7 @@ const AnimatedCharacters = ({characterClass, strArray, idx}) => {
     return (
         <span>
             {
-                strArray.map((char,i) => (
+                strArray.map((char, i) => (
                     <span key={char + i} className={`${characterClass} _${i + idx}`}>
                         {char}
                     </span>

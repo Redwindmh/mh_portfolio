@@ -66,10 +66,12 @@
         float: left;
         animation: fadeIn 1s 2.2s backwards;
         white-space: nowrap;
+        animation-fill-mode: forwards;
 
         &:hover {
             background: #ffd700;
             color: #333;
+            animation: swing 1s;
         }
     }
 

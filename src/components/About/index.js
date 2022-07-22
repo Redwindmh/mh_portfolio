@@ -20,7 +20,7 @@ const About = ()=> {
     <div className="container about-page">
         <div className="text-zone">
             <h1>
-            <AnimatedCharacters characterClass={characterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15}/>
+            <AnimatedCharacters characterClass={characterClass} strArray={'About\xa0me'.split('')} idx={15}/>
             </h1>
             <p>
                 I am the creator, the great giving and taker

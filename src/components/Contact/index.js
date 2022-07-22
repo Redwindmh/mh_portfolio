@@ -3,7 +3,7 @@ import Loader from 'react-loaders'
 import AnimatedCharacters from '../AnimatedCharacters'
 import './index.css'
 import emailjs from '@emailjs/browser'
-// import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 const Contact = () => {
     const [characterClass, setCharacterClass] = useState('text-animate');
@@ -41,7 +41,7 @@ const Contact = () => {
         <div className='container contact-page'>
             <div className='text-zone'>
                 <h1>
-                    <AnimatedCharacters characterClass={characterClass} strArray={"Contact me".split("")} idx={15} />
+                    <AnimatedCharacters characterClass={characterClass} strArray={"Contact\xa0me".split("")} idx={15} />
                 </h1>
                 <p>
                     Please get in touch with me!
@@ -73,12 +73,12 @@ const Contact = () => {
                 <span>malhendricks@gmail.com</span>
             </div>
             <div className='map-wrapper' id='map'>
-                {/* <MapContainer center={[36.54181891676484, 138.41257884856518]} zoom={13}>
+                <MapContainer center={[36.54181891676484, 138.41257884856518]} zoom={13}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     <Marker position={[36.54181891676484, 138.41257884856518]} >
                         <Popup className='popup-text'>“You're off the edge of the map, mate.<br />Here, there be monsters.”</Popup>
                     </Marker>
-                </MapContainer> */}
+                </MapContainer>
             </div>
         </div>
         <Loader type="pacman" />
