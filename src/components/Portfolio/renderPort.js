@@ -1,5 +1,4 @@
 import React from "react"
-import redwindstagramImg from './portfolio/1/redwindstagram.png';
 
 const renderPortfolio = (portfolio) => {
     return (
@@ -8,7 +7,7 @@ const renderPortfolio = (portfolio) => {
                 portfolio.map((port) => {
                     return (
                         <div className='image-box' key={port.id}>
-                            <img src={redwindstagramImg} className="portfolio-image" alt={`portfolio ${port.id}`} />
+                            <img src={port.cover} className="portfolio-image" alt={`portfolio ${port.id}`} />
                             <div className='content'>
                                 <p className='title'>{port.title}</p>
                                 <h4 className='description'>{port.description}</h4>
