@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './index.css';
-// import LogoS from '../../assets/images/logo-s.png'
 import RWLogo from '../../assets/images/RedWind.JPG'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faTwitter, faGithub, faSkype } from '@fortawesome/free-brands-svg-icons'
