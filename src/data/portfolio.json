@@ -9,7 +9,7 @@
         },
         {
             "id" : 2,
-            "cover": "${process.env.PUBLIC_URL}/portfolio/2/tlon.png",
+            "cover": "http://redwindmh.github.io/mh_portfolio/portfolio/2/tlon.png",
             "title": "The Legend of Nina: Jin's Awakening",
             "description": "Top-down style game made in Python",
             "url": "https://redwindstagram.herokuapp.com/"
