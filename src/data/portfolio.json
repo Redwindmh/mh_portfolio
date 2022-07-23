@@ -2,14 +2,14 @@
     "portfolio": [
         {
             "id" : 1,
-            "cover": "/portfolio/1/redwindstagram.png",
+            "cover": "http://redwindmh.github.io/mh_portfolio/portfolio/1/redwindstagram.png",
             "title": "Redwindstagram",
             "description": "Instagram clone made using Laravel",
             "url": "https://redwindstagram.herokuapp.com/"
         },
         {
             "id" : 2,
-            "cover": "/portfolio/2/tlon.png",
+            "cover": "${process.env.PUBLIC_URL}/portfolio/2/tlon.png",
             "title": "The Legend of Nina: Jin's Awakening",
             "description": "Top-down style game made in Python",
             "url": "https://redwindstagram.herokuapp.com/"
