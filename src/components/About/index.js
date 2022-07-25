@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './index.css';
 import AnimatedCharacters from '../AnimatedCharacters'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faPhp, faReact, faSass} from '@fortawesome/free-brands-svg-icons'
+import { faGitAlt, faHtml5, faJsSquare, faPhp, faReact, faSass, faUnity} from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
 const About = ()=> {
@@ -22,15 +22,17 @@ const About = ()=> {
             <h1>
             <AnimatedCharacters characterClass={characterClass} strArray={'About\xa0me'.split('')} idx={15}/>
             </h1>
-            <p>
-                I am the creator, the great giving and taker
-            </p>
-            <p>
-                This is just a test
-            </p>
-            <p>
-                Puerto Ricans known for slashing
-            </p>
+            <div className='about-text'>
+                <p>
+                    I'm Malcolm Hendricks, a freelance web developer, Unity developer and Japanese to English translator.
+                </p>
+                <p>
+                    I specialize in building multi-lingual personal and small-business web applications.
+                </p>
+                <p>
+                    Please don't hesitate to get in touch for any services I provide, or if you would like to collaborate on a project!
+                </p>
+            </div>
         </div>
         <div className="stage-cube-content">
             <div className="cube-spinner">
@@ -38,13 +40,13 @@ const About = ()=> {
                     <FontAwesomeIcon icon={faHtml5} color="#F06529" />
                 </div>
                 <div className="face2">
-                    <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                    <FontAwesomeIcon icon={faSass} color="#28A4D9" />
                 </div>
                 <div className="face3">
                     <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
                 </div>
                 <div className="face4">
-                    <FontAwesomeIcon icon={faSass} color="#BF4080" />
+                    <FontAwesomeIcon icon={faUnity} color="#BF4080" />
                 </div>
                 <div className="face5">
                     <FontAwesomeIcon icon={faReact} color="#5ED4F4" />

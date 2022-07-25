@@ -1,3 +1,33 @@
+@charset "UTF-8";
+p:nth-of-type(1):hover {
+  visibility: hidden;
+}
+
+p:nth-of-type(1):hover::before {
+  content: 'フリーランスのウェブ・ユニティー開発者・日英翻訳家、ヘンドリックス・マルコムと申します。';
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+p:nth-of-type(2):hover {
+  visibility: hidden;
+}
+
+p:nth-of-type(2):hover::before {
+  content: '専門はバイリンガルウェブアプリ開発です。';
+  visibility: visible;
+}
+
+p:nth-of-type(3):hover {
+  visibility: hidden;
+}
+
+p:nth-of-type(3):hover::before {
+  content: '何かのご役に立てるようでしたら、気軽にお問い合わせください！';
+  visibility: visible;
+}
+
 .stage-cube-content {
   width: 50%;
   height: 100%;
