@@ -1,35 +1,51 @@
-.about-text {
-    p {
-        &:nth-of-type(1):hover {
-            visibility: hidden;
+$xs: "only screen and (max-width:575px)";
+$sm: "only screen and (min-width:576px) and (max-width:767px)";
+$md: "only screen and (min-width:768px) and (max-width:991px)";
+$lg: "only screen and (min-width:992px) and (max-width:1199px)";
+$xl: "only screen and (min-width:1200px)";
 
-            &::before {
-                content: 'フリーランスのウェブ・ユニティー開発者・日英翻訳家、ヘンドリックス・マルコムと申します。';
-                visibility: visible;
-                animation: fadeIn 1s;
+// .about-text {
+//     p {
+//         margin: 0;
+//         padding: 0;
+//         border: 0;
 
-            }
-        }
+//         &:nth-of-type(1):hover {
+//             visibility: hidden;
+//             margin: 0;
+//             padding: 0;
+//             border: 0;
 
-        &:nth-of-type(2):hover {
-            visibility: hidden;
+//             &::before {
+//                 content: 'フリーランスのウェブ・ユニティー開発者・日英翻訳家、ヘンドリックス・マルコムと申します。';
+//                 visibility: visible;
+//                 animation: fadeIn 1s;
+//                 margin: 0;
+//                 padding: 0;
+//                 border: 0;
 
-            &::before {
-                content: '専門はバイリンガルウェブアプリ開発です。';
-                visibility: visible;
-            }
-        }
+//             }
+//         }
 
-        &:nth-of-type(3):hover {
-            visibility: hidden;
+//         &:nth-of-type(2):hover {
+//             visibility: hidden;
 
-            &::before {
-                content: '何かのご役に立てるようでしたら、気軽にお問い合わせください！';
-                visibility: visible;
-            }
-        }
-    }
-}
+//             &::before {
+//                 content: '専門はバイリンガルウェブアプリ開発です。';
+//                 visibility: visible;
+//             }
+//         }
+
+//         &:nth-of-type(3):hover {
+//             visibility: hidden;
+
+//             &::before {
+//                 content: '何かのご役に立てるようでしたら、気軽にお問い合わせください！';
+//                 visibility: visible;
+//             }
+//         }
+//     }
+// }
 
 .stage-cube-content {
     width: 50%;
@@ -40,6 +56,11 @@
     position: absolute;
     right: 0;
     // overflow: hidden;
+
+    @media #{$md,$sm,$xs} {
+        top: 100;
+        right: 20;
+    }
 }
 
 .cube-spinner {

@@ -83,6 +83,14 @@
   opacity: 0.6;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 575px) {
+  .container.about-page h1,
+  .container.contact-page h1,
+  .container.portfolio-page h1 {
+    font-size: 43px;
+  }
+}
+
 .container.about-page p,
 .container.contact-page p,
 .container.portfolio-page p {
