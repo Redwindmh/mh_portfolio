@@ -1,3 +1,9 @@
+$xs: "only screen and (max-width:575px)";
+$sm: "only screen and (min-width:576px) and (max-width:767px)";
+$md: "only screen and (min-width:768px) and (max-width:991px)";
+$lg: "only screen and (min-width:992px) and (max-width:1199px)";
+$xl: "only screen and (min-width:1200px)";
+
 .home-page {
     .text-zone {
         position: absolute;
@@ -28,6 +34,10 @@
             margin-top: -40px;
             left: 15px;
             opacity: 0.6;
+
+            @media #{$md,$sm} {
+                margin-top: -100px;
+            }
         }
 
         &::after {
@@ -40,6 +50,16 @@
             margin-left: 20px;
             animation: fadeIn 1s backwards;
             opacity: 0.6;
+
+            @media #{$md} {}
+        }
+
+        @media #{$md} {
+            font-size: 25px;
+        }
+
+        @media #{$sm,$xs} {
+            font-size: 25px;
         }
     }
 
@@ -78,9 +98,16 @@
     model-viewer {
         position: absolute;
         left: 10%;
-        top: -200px;
-        height: 900px;
+        top: -10px;
+        height: 700px;
         width: 100vw;
         z-index: -1;
+
+        @media #{$md} {
+            left: 10%;
+            top: -20px;
+            height: 400px;
+            width: 90vw;
+        }
     }
 }

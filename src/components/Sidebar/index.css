@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width:1200px), only screen and (min-width:992px) and (max-width:1199px) {
   .nav-bar {
     background: #181818;
     width: 60px;
@@ -7,6 +7,9 @@
     top: 0;
     z-index: 3;
     min-height: 500px;
+  }
+  .nav-bar .nav-bar-mobile {
+    display: none;
   }
   .nav-bar .logo {
     display: block;
@@ -46,7 +49,6 @@
     text-decoration: none;
   }
   .nav-bar nav a i {
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
   }
   .nav-bar nav a:hover {
@@ -59,7 +61,7 @@
     opacity: 1;
   }
   .nav-bar nav a:after {
-    content: '';
+    content: "";
     font-size: 9px;
     letter-spacing: 2px;
     font-weight: 1000;
@@ -69,20 +71,19 @@
     width: 100%;
     text-align: center;
     opacity: 0;
-    -webkit-transition: all 0.1s ease-out;
     transition: all 0.1s ease-out;
   }
   .nav-bar nav a:first-child::after {
-    content: 'HOME';
+    content: "HOME";
   }
   .nav-bar nav a.about-link:after {
-    content: 'ABOUT';
+    content: "ABOUT";
   }
   .nav-bar nav a.contact-link:after {
-    content: 'CONTACT';
+    content: "CONTACT";
   }
   .nav-bar nav a.portfolio-link:after {
-    content: 'PORTFOLIO';
+    content: "PORTFOLIO";
     letter-spacing: 1px;
   }
   .nav-bar nav a.active svg {
@@ -106,20 +107,39 @@
   }
   .nav-bar ul li a:hover svg {
     color: red;
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
   }
 }
-
-@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (max-width: 575px) {
+@media only screen and (min-width:768px) and (max-width:991px), only screen and (min-width:576px) and (max-width:767px), only screen and (max-width:575px) {
   .nav-bar {
+    overflow: hidden;
     background: #181818;
     width: 100%;
     height: 60px;
-    position: absolute;
+    position: relative;
     top: 0;
     z-index: 3;
-    min-width: 500px;
+  }
+  .nav-bar .nav-bar-pc {
+    display: none;
+  }
+  .nav-bar .nav-bar-mobile-icons {
+    display: flex;
+    justify-content: end;
+  }
+  .nav-bar #menu-links {
+    list-style-type: none;
+    display: none;
+  }
+  .nav-bar .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .nav-bar .icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
   .nav-bar .logo {
     visibility: hidden;
@@ -142,17 +162,9 @@
     letter-spacing: 1px;
   }
   .nav-bar nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: block;
+    justify-content: space-around;
     position: absolute;
-    left: 3%;
-    right: 50%;
-    width: 210px;
-    top: 15%;
-    height: 100%;
   }
   .nav-bar nav a {
     font-size: 22px;
@@ -164,7 +176,6 @@
     text-decoration: none;
   }
   .nav-bar nav a i {
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
   }
   .nav-bar nav a:hover {
@@ -177,7 +188,7 @@
     opacity: 1;
   }
   .nav-bar nav a:after {
-    content: '';
+    content: "";
     font-size: 9px;
     letter-spacing: 2px;
     font-weight: 1000;
@@ -187,20 +198,19 @@
     width: 100%;
     text-align: center;
     opacity: 0;
-    -webkit-transition: all 0.1s ease-out;
     transition: all 0.1s ease-out;
   }
   .nav-bar nav a:first-child::after {
-    content: 'HOME';
+    content: "HOME";
   }
   .nav-bar nav a.about-link:after {
-    content: 'ABOUT';
+    content: "ABOUT";
   }
   .nav-bar nav a.contact-link:after {
-    content: 'CONTACT';
+    content: "CONTACT";
   }
   .nav-bar nav a.portfolio-link:after {
-    content: 'PORTFOLIO';
+    content: "PORTFOLIO";
     letter-spacing: 1px;
   }
   .nav-bar nav a.active svg {
@@ -210,8 +220,6 @@
     position: absolute;
     bottom: 15px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     left: 50%;
     right: 5%;
@@ -228,8 +236,6 @@
   }
   .nav-bar ul li a:hover svg {
     color: red;
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
   }
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

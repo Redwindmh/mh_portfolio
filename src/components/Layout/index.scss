@@ -53,6 +53,18 @@ $xl: "only screen and (min-width:1200px)";
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
+
+    @media #{$md,$sm,$xs} {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        top: 5%;
+        margin: 0 auto;
+        z-index: 1;
+        transform-style: preserve-3d;
+        animation: fadeIn 1s forwards;
+        animation-delay: 1s;
+    }
 }
 
 .container.about-page,
@@ -93,7 +105,7 @@ $xl: "only screen and (min-width:1200px)";
         }
 
         @media #{$md, $sm, $xs} {
-            font-size: 43px;
+            font-size: 23px;
         }
     }
 

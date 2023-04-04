@@ -4,8 +4,13 @@ $md: "only screen and (min-width:768px) and (max-width:991px)";
 $lg: "only screen and (min-width:992px) and (max-width:1199px)";
 $xl: "only screen and (min-width:1200px)";
 
-@media #{$xl,$lg,$md} {
+@media #{$xl,$lg} {
     .nav-bar {
+
+        .nav-bar-mobile {
+            display: none;
+        }
+
         background: #181818;
         width: 60px;
         height: 100%;
@@ -144,15 +149,43 @@ $xl: "only screen and (min-width:1200px)";
     }
 }
 
-@media #{$sm,$xs} {
+@media #{$md,$sm,$xs} {
     .nav-bar {
+
+        .nav-bar-pc {
+            display: none;
+        }
+
+        overflow: hidden;
         background: #181818;
         width: 100%;
         height: 60px;
-        position: absolute;
+        position: relative;
         top: 0;
         z-index: 3;
-        min-width: 500px;
+        // min-width: 500px;
+
+        .nav-bar-mobile-icons {
+            display: flex;
+            justify-content: end;
+        }
+
+        #menu-links {
+            list-style-type: none;
+            display: none;
+        }
+
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .icon {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
 
         .logo {
             visibility: hidden;
@@ -178,14 +211,14 @@ $xl: "only screen and (min-width:1200px)";
         }
 
         nav {
-            display: flex;
+            display: block;
             justify-content: space-around;
             position: absolute;
-            left: 3%;
-            right: 50%;
-            width: 210px;
-            top: 15%;
-            height: 100%;
+            // left: 3%;
+            // right: 50%;
+            // width: 210px;
+            // top: 15%;
+            // height: 100%;
 
             a {
                 font-size: 22px;
