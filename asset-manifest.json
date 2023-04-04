@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mh_portfolio/static/css/main.cd2d2b9b.css",
-    "main.js": "/mh_portfolio/static/js/main.fa28cca7.js",
+    "main.css": "/mh_portfolio/static/css/main.a7ead87b.css",
+    "main.js": "/mh_portfolio/static/js/main.67669817.js",
     "static/js/787.5a65df49.chunk.js": "/mh_portfolio/static/js/787.5a65df49.chunk.js",
     "static/media/RedWind.JPG": "/mh_portfolio/static/media/RedWind.a6d75283aaf9e02d5826.JPG",
     "static/media/helvetica-neu.ttf": "/mh_portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff2": "/mh_portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/mh_portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/mh_portfolio/index.html",
-    "main.cd2d2b9b.css.map": "/mh_portfolio/static/css/main.cd2d2b9b.css.map",
-    "main.fa28cca7.js.map": "/mh_portfolio/static/js/main.fa28cca7.js.map",
+    "main.a7ead87b.css.map": "/mh_portfolio/static/css/main.a7ead87b.css.map",
+    "main.67669817.js.map": "/mh_portfolio/static/js/main.67669817.js.map",
     "787.5a65df49.chunk.js.map": "/mh_portfolio/static/js/787.5a65df49.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd2d2b9b.css",
-    "static/js/main.fa28cca7.js"
+    "static/css/main.a7ead87b.css",
+    "static/js/main.67669817.js"
   ]
 }
